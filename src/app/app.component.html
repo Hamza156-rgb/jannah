@@ -1,30 +1,39 @@
 <ion-app>
   <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
-      <ion-toolbar >
-        <!-- <ion-title>Start Menu</ion-title> -->
-        <img src="../assets/logo.png" style="width: 100%;"/>
+      <ion-toolbar>
+        <ion-row>
+          <ion-col size="10">
+            <img src="../assets/logo.jpg" style="width: 100%;" />
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon (click)="openEnd()" name="close-circle" style="color: black;font-size:30px;"
+              class="ion-padding-top"></ion-icon>
+
+          </ion-col>
+        </ion-row>
+
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item [routerLink]="['/']">
-          <ion-icon name="home"></ion-icon>
+        <ion-item lines="none" [routerLink]="['/']">
+          <ion-icon name="home" class="ion-padding"></ion-icon>
           Home
         </ion-item>
-        <ion-item  [routerLink]="['/about']">
-          <ion-icon name="person"></ion-icon>
-         
+        <ion-item lines="none" [routerLink]="['/about']">
+          <ion-icon name="person" class="ion-padding"></ion-icon>
+
           About
         </ion-item>
-        <ion-item [routerLink]="['/contact']">
-          <ion-icon name="journal"></ion-icon>
+        <ion-item lines="none" [routerLink]="['/contact']">
+          <ion-icon name="journal" class="ion-padding"></ion-icon>
           Contact
         </ion-item>
-        <ion-item>
-          <ion-icon name="key"></ion-icon>
+        <!-- <ion-item lines="none">
+          <ion-icon name="key" class="ion-padding"></ion-icon>
           FAQ'S
-        </ion-item>
+        </ion-item> -->
 
       </ion-list>
     </ion-content>

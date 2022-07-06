@@ -1,16 +1,10 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button color="success"></ion-menu-button>
+    </ion-buttons>
 
-    <ion-row>
-      <ion-col size="4">
-        <ion-menu-button style="color: green;"></ion-menu-button>
-      </ion-col>
-      <ion-col size="4"></ion-col>
-      <ion-col size="4">
-        <img src="../assets/logo.png" style="width: 50%;" />
-      </ion-col>
 
-    </ion-row>
 
   </ion-toolbar>
 </ion-header>
@@ -23,19 +17,15 @@
     <ion-col size="12">
       <ion-card>
         <img src="../assets/main.jpg" />
-      </ion-card>
 
-      <!-- <ion-searchbar animated></ion-searchbar> -->
+      </ion-card>
     </ion-col>
     <ion-col size="6">
       <ion-card [routerLink]="['/dua']">
-        
+
         <img src="../assets/dua.jpg" />
-        
-        
+
       </ion-card>
-
-
     </ion-col>
 
     <ion-col size="6">
@@ -65,10 +55,16 @@
 
     <ion-col size="6">
       <ion-card [routerLink]="['/manners']">
-        <img src="../assets/manners.jpg" />
+        <img src="../assets/manners.png" />
       </ion-card>
 
 
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card [routerLink]="['/wuzu']">
+        <img src="../assets/wuzu.png" />
+      </ion-card>
     </ion-col>
 
 
@@ -110,11 +106,7 @@
       </ion-card>
     </ion-col>
 
-    <ion-col size="6">
-      <ion-card [routerLink]="['/wuzu']">
-        <img src="../assets/wuzu.jpg" />
-      </ion-card>
-    </ion-col>
+   
 
     <ion-col size="6">
       <ion-card [routerLink]="['/sickness']">
@@ -128,42 +120,62 @@
       </ion-card>
     </ion-col>
 
-    <!-- <ion-col size="6">
-      <ion-card>
-        <img src="../assets/dunia.jpg" />
-      </ion-card>
-    </ion-col> -->
+   
 
 
   </ion-row>
 </ion-content>
 
 
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-row>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="book-outline"></ion-icon>
-      </ion-col>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="cloudy-night-outline"></ion-icon>
 
-      </ion-col>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="happy-outline"></ion-icon>
-      </ion-col>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="folder-outline"></ion-icon>
-      </ion-col>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="invert-mode-outline"></ion-icon>
-      </ion-col>
-      <ion-col size="2" style="font-size:30px">
-        <ion-icon name="moon-outline"></ion-icon>
-      </ion-col>
-    </ion-row>
+<ion-footer mode="ios" style="background-color:white;color:black">
+  <ion-row>
 
-  </ion-toolbar>
+    <ion-col class="ion-padding" size="2.4">
+      <ion-tab-button tab="caregivers">
+ 
+        <ion-img src="../assets/footer/tuheed.jpg" style="width: 70%;"></ion-img>
+        <p>Tuheed</p>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="2.4">
+      <ion-tab-button tab="">
+
+        <ion-img src="../assets/footer/namaz.png" style="width: 70%;"></ion-img>
+        <p>Namaz</p>
+      </ion-tab-button>
+
+    </ion-col>
+
+    <ion-col class="ion-padding" size="2.4">
+      <ion-tab-button tab="">
+      
+        <ion-img src="../assets/footer/roza.png" style="width: 80%;"></ion-img>
+        <p>Roza</p>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="2.4">
+      <ion-tab-button tab="">
+     
+        <ion-img src="../assets/footer/zakat.jpg" style="width: 70%;"></ion-img>
+        <p>Zakat</p>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="2.4">
+      <ion-tab-button tab="">
+     
+        <ion-img src="../assets/footer/hajj.png" style="width: 70%;"></ion-img>
+        <p>Hajj</p>
+      </ion-tab-button>
+
+    </ion-col>
+
+  </ion-row>
+
+
 
 
 </ion-footer>

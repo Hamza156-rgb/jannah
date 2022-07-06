@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private menu: MenuController,private router: Router) {}
+  constructor(private menu: MenuController, private router: Router) { }
 
   openFirst() {
     this.menu.enable(true, 'first');
@@ -16,19 +16,19 @@ export class AppComponent {
   }
 
   openEnd() {
-    this.menu.open('end');
+    this.menu.toggle('first');
   }
 
   openCustom() {
     this.menu.enable(true, 'custom');
     this.menu.open('custom');
   }
-  home(){
+  home() {
     this.router.navigate(['/'])
   }
-  about(){
+  about() {
     this.router.navigate(['/about'])
   }
 
- 
+
 }
