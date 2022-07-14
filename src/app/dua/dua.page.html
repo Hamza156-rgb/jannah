@@ -24,20 +24,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  
     
-      <ion-card>
-        <img src="../assets/main.jpg" />
-      </ion-card>
-
-  
-  
-
+      
+     
   <ion-row class="ion-padding">
-    <ion-col size="6" *ngFor="let items of dua">
-      <img [src]="items.image" />
-    </ion-col>
+    <img src="../assets/main.jpg" />
+    <ion-card *ngFor="let items of dua">
+      <ion-col size="12" >
+        <img [src]="items.image" />
+      </ion-col>
+    </ion-card>
+  
   </ion-row>
 </ion-content>
 

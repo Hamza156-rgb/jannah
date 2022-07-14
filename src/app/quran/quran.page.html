@@ -26,49 +26,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-col size="12">
-    <ion-card>
-      <img src="../assets/main.jpg" />
+
+
+
+  <ion-row class="ion-padding">
+    <img src="../assets/main.jpg" />
+    <ion-card *ngFor="let items of quran">
+      <ion-col size="6">
+
+        <img [src]="items.image" />
+      </ion-col>
     </ion-card>
-  </ion-col>
-  <ion-row>
-
-    <ion-col size="6">
-
-      <img src="../assets/quran/1.png" />
-
-
-
-    </ion-col>
-    <ion-col size="6">
-
-      <img src="../assets/quran/2.png" />
-
-
-
-    </ion-col>
-    <ion-col size="6">
-
-      <img src="../assets/quran/3.png" />
-
-    </ion-col>
-    <ion-col size="6">
-
-      <img src="../assets/quran/4.png" />
-
-    </ion-col>
-    <ion-col size="6">
-
-      <img src="../assets/quran/5.png" />
-
-    </ion-col>
-    <ion-col size="6">
-
-      <img src="../assets/quran/6.png" />
-
-    </ion-col>
-
-
   </ion-row>
 </ion-content>
 <ion-footer mode="ios" style="background-color:white;color:black">

@@ -3,7 +3,7 @@
 
   <ion-toolbar>
     <ion-row>
-      <ion-col size="2">
+      <ion-col size="1">
         <div class="ion-text-start">
           <ion-buttons>
             <ion-back-button defaultHref="/" color="success"></ion-back-button>
@@ -11,34 +11,27 @@
         </div>
       </ion-col>
 
-      <ion-col size="8">
+      <ion-col size="10">
         <div class="ion-text-center">
           <ion-title class="ion-padding-top" color="success">
             Repentance
-
           </ion-title>
         </div>
       </ion-col>
-      <ion-col size="2"></ion-col>
+      <ion-col size="1"></ion-col>
     </ion-row>
 
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-col size="12">
-    <ion-card>
-      <img src="../assets/main.jpg" />
-    </ion-card>
-  </ion-col>
   <ion-row class="ion-padding">
-   
-    <ion-col size="6">
-        <img src="../assets/repentance/1.png"  />
-    </ion-col>
-    <ion-col size="6">
-        <img src="../assets/repentance/2.png" />
-    </ion-col>
+    <img src="../assets/main.jpg" />
+    <ion-card *ngFor="let items of repentance">
+      <ion-col size="12">
+        <img [src]="items.image" />
+      </ion-col>
+    </ion-card>
   </ion-row>
 </ion-content>
 <ion-footer mode="ios" style="background-color:white;color:black">
@@ -46,7 +39,7 @@
 
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="caregivers">
- 
+
         <ion-img src="../assets/footer/tuheed.jpg" style="width: 70%;"></ion-img>
         <p>Tuheed</p>
       </ion-tab-button>
@@ -63,7 +56,7 @@
 
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-      
+
         <ion-img src="../assets/footer/roza.png" style="width: 80%;"></ion-img>
         <p>Roza</p>
       </ion-tab-button>
@@ -71,7 +64,7 @@
     </ion-col>
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-     
+
         <ion-img src="../assets/footer/zakat.jpg" style="width: 70%;"></ion-img>
         <p>Zakat</p>
       </ion-tab-button>
@@ -79,7 +72,7 @@
     </ion-col>
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-     
+
         <ion-img src="../assets/footer/hajj.png" style="width: 70%;"></ion-img>
         <p>Hajj</p>
       </ion-tab-button>

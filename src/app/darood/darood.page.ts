@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DaroodPage implements OnInit {
 
+
+  darood = [
+    {
+      'image': '../assets/durood/1.png'
+    },
+    {
+      'image': '../assets/durood/2.png'
+    },
+    {
+      'image': '../assets/durood/3.png'
+    },
+    {
+      'image': '../assets/durood/4.png'
+    },
+
+  ]
+
   constructor() { }
 
   ngOnInit() {

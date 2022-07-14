@@ -1,8 +1,4 @@
 <ion-header [translucent]="true">
-  
-
-
-
   <ion-toolbar>
     <ion-row>
       <ion-col size="4">
@@ -28,48 +24,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-col size="12">
-     
-    <img src="../assets/main.jpg" />
 
+  
 
-
-</ion-col>
+ 
+ 
 
   <ion-row class="ion-padding">
-
-   
-    <ion-col size="6">
-   
-        <img src="../assets/durood/1.png" />
-    
-
-
-    </ion-col>
-
-    <ion-col size="6">
- 
-        <img src="../assets/durood/2.png"/>
-      
-
-
-    </ion-col>
-
-    <ion-col size="6">
-     
-        <img src="../assets/durood/3.png"/>
-     
-
-
-    </ion-col>
-
-
-    <ion-col size="6">
-    
-        <img src="../assets/durood/4.png"/>
-
-
-    </ion-col>
+    <img src="../assets/main.jpg" />
+<ion-card *ngFor="let items of darood">
+  <ion-col size="12" >
+    <img [src]="items.image" />
+  </ion-col>
+</ion-card>
   </ion-row>
 </ion-content>
 
@@ -79,7 +46,7 @@
 
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="caregivers">
- 
+
         <ion-img src="../assets/footer/tuheed.jpg" style="width: 70%;"></ion-img>
         <p>Tuheed</p>
       </ion-tab-button>
@@ -96,7 +63,7 @@
 
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-      
+
         <ion-img src="../assets/footer/roza.png" style="width: 80%;"></ion-img>
         <p>Roza</p>
       </ion-tab-button>
@@ -104,7 +71,7 @@
     </ion-col>
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-     
+
         <ion-img src="../assets/footer/zakat.jpg" style="width: 70%;"></ion-img>
         <p>Zakat</p>
       </ion-tab-button>
@@ -112,7 +79,7 @@
     </ion-col>
     <ion-col class="ion-padding" size="2.4">
       <ion-tab-button tab="">
-     
+
         <ion-img src="../assets/footer/hajj.png" style="width: 70%;"></ion-img>
         <p>Hajj</p>
       </ion-tab-button>

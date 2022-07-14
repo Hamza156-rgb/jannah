@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QabarPage implements OnInit {
 
+  qabar = [
+    {
+      'image': '../assets/qabar/1.png'
+    },
+    {
+      'image': '../assets/qabar/2.png'
+    },
+  
+  ]
+
+
   constructor() { }
 
   ngOnInit() {

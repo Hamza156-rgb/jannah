@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepentancePage implements OnInit {
 
+
+
+  repentance = [
+    {
+      'image': '../assets/repentance/1.png'
+    },
+    {
+      'image': '../assets/repentance/2.png'
+    },
+  
+  ]
   constructor() { }
 
   ngOnInit() {
